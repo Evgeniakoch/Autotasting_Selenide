@@ -37,6 +37,6 @@ public class cardOrderForm {
         $(".notification__content").shouldHave(text("Встреча успешно забронирована на " + TodayPlus3Days()),
                 Duration.ofSeconds(15)).shouldBe(visible);
     }
-    
+
 
 }
