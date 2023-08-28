@@ -18,8 +18,6 @@ public class cardOrderForm {
         return LocalDate.now().plusDays(3).format(DateTimeFormatter.ofPattern("dd.MM.yyyy"));
 
     }
-
-
     @Test
     void shouldSendCardOrderFormWithValidInformation() {
         Configuration.holdBrowserOpen = true;
@@ -37,6 +35,4 @@ public class cardOrderForm {
         $(".notification__content").shouldHave(text("Встреча успешно забронирована на " + TodayPlus3Days()),
                 Duration.ofSeconds(15)).shouldBe(visible);
     }
-
-
 }
